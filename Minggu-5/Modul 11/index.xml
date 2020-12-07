@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<dataDiri>
+    <nama>
+        <awal>Sultan</awal>
+        <akhir>Raffy</akhir>
+    </nama>
+    <jenisKelamin>Laki-laki</jenisKelamin>
+
+    <alamat>
+        <desa>Korpri Jaya</desa>
+        <kecamatan>Sukarame</kecamatan>
+        <kabupaten>Bandar Lampung</kabupaten>
+    </alamat>
+
+    <sosialMedia>
+        <facebook>Sultan Raffy</facebook>
+        <instagram>sultan.raffy</instagram>
+    </sosialMedia>
+</dataDiri>

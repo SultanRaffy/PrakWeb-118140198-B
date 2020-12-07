@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <div>
+        <h2>getElementByName()</h2>
+        <input type="text" name="name">
+        <button onclick="myFunction()">Submit</button>
+        <script>
+            function myFunction(){
+                var x = document.getElementsByName("name")[0];
+                alert(document.getElementsByName("name")[0].value);
+            }
+        </script>
+    </div>
+    <hr>
+    <div>
+        <h2>getElementByClassName()</h2>
+        <div class="test">Don't Click Me</div>
+        <button onclick="myFunction2()">Click Here!</button>
+        <script>
+            function myFunction2(){
+                var x = document.getElementsByClassName("test");
+                x[0].innerHTML = "Why you click me!!!";
+            }
+        </script>
+    </div>
+    <hr>
+    <div>
+        <h2>getElementByTagName</h2>
+        <p>Click tombol untuk mengubah text ini.</p>
+        <button onclick="myFunction3()">Try it</button>
+        <script>
+            function myFunction3() {
+            document.getElementsByTagName("P")[0].innerHTML = "Hello World!";
+            }
+        </script>
+    </div>
+    <hr>
+    <div class="querySelector">
+        <h2>querySelector()</h2>
+        <p id="change">NIM-Nama</p>
+        <button onclick="myFunction4()">UPDATE NIM dan NAMA</button>
+        <script>
+            function myFunction4(){
+                document.querySelector('#change').innerHTML="118140198-Sultan Raffy";
+            }
+        </script>
+    </div>
+    <hr>
+    <div>
+        <h2>querySelectorAll()</h2>
+        <div class="example">div element dengan class="example"</div>
+        <div>div element tanpa class="example"</div>
+        <p class="example">p element dengan class="example"</p>
+        <p>klik untuk mengetahui jumlah element dengan class "example"</p>
+        <button onclick="myFunction5()">Click Here!</button>
+        <p id="demo"></p>
+
+        <script>
+            function myFunction5() {
+                var x = document.querySelectorAll(".example");
+                document.getElementById("demo").innerHTML = x.length;
+                var i;
+                for (i = 0; i < x.length; i++) {
+                x[i].style.backgroundColor = "red";
+                }
+            }
+        </script>
+    </div>
+</body>
+</html>

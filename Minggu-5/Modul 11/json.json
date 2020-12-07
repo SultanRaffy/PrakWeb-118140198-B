@@ -1,0 +1,20 @@
+{
+    "dataDiri":{
+        "nama":{
+            "awal": "Sultan",
+            "akhir" : "Raffy"
+        },
+        "jenisKelamin": "laki-laki",
+        
+        "alamat":{
+            "desa": "Korpri Jaya",
+            "kecamatan": "Sukarame",
+            "kabupaten": "Bandara Lampung"
+        },
+        "sosialMedia":{
+            "facebook": "Sultan Raffy",
+            "Instagram": "sultan.raffy"
+        }
+    }
+
+}
