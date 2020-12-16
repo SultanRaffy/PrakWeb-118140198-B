@@ -1,15 +1,9 @@
 <?php
 
-$host ="localhost";
-$user ="root";
-$password ="";
-$db ="belajar_ajax";
+$con = mysqli_connect('localhost','root','','belajar_ajax');
 
-
-$kon = mysqli_connect($host,$user,$password,$db);
-
-if(!$kon){
+if(!$con){
 	die("Koneksi gagal:".mysqli_connect_error());
- }
+}
 
- ?>
+?>

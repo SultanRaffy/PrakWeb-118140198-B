@@ -1,10 +1,18 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-	<script type="text/javascript" src="jquery-3.5.1.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="jquery-3.5.1.min.js"></script>
+    <style>
+        label{
+            float: left;
+            width: 100px;
+            padding-right: 24px;
+        }
+    </style>
 </head>
-
 <body>
 	<form method="post" id="form_mahasiswa">
 		<label for="">NIM </label>
@@ -16,17 +24,18 @@
 			<option value="IF">Teknik Informatika</option>
 			<option value="EL">Teknik Elektro</option>}
 			<option value="SI">Teknik Sipil</option>
-			<option value="TG">Teknik Geofisika</option>
 			<option value="MA">Matematika</option>
 		</select><br>
 		<label for="">Angkatan</label>
 		<select name="angkatan" id="angkatan">
+			<option value="2020">2020</option>
+			<option value="2019">2019</option>
 			<option value="2018">2018</option>
 			<option value="2017">2017</option>}
 			<option value="2016">2016</option>
+			
 		</select>
 	</form>
-	<!-- <button id="btn_tampil" value="Tambah">Tampilkan</button> -->
 	<input type="button" name="btn_tampil" id="btn_tampil" value="Tambah">
 	<hr>
 	<div id="tampil_data"></div>
